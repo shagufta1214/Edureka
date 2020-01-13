@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [EdurePhoto]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="MavenTest(failed)">
+    <classes>
+      <class name="com.edurekademo.basics.GoogleSearch">
+        <methods>
+          <include name="search"/>
+          <include name="launchApp"/>
+        </methods>
+      </class> <!-- com.edurekademo.basics.GoogleSearch -->
+    </classes>
+  </test> <!-- MavenTest(failed) -->
+</suite> <!-- Failed suite [EdurePhoto] -->
