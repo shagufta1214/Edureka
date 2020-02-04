@@ -1,8 +1,10 @@
 package com.EdurekaPhotoUpload;
 
+import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -21,8 +23,7 @@ driver = new ChromeDriver();
 driver.manage().window().maximize();
 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 driver.get("https://www.edureka.co");
-driver.findElement(By.xpath("LogInBtn"));
-driver.findElement(By.xpath("//a[@class='signin top-signin giTrackElementHeader hidden-xs']"));
+
 }
 
 	@Test
@@ -51,7 +52,12 @@ driver.findElement(By.xpath("//a[@class='signin top-signin giTrackElementHeader 
 		    driver.findElement(By.id("//a[@id='personal_details']//i[@class='icon-pr-edit'] "));
 		    driver.findElement(By.xpath("//img[@class='img-circle img-responsive']"));
 		    
-		    
+		    driver.get("//www.edureka.co/blog/");
+	        String selectLinkNewTab = Keys.chord(Keys.CONTROL,Keys.RETURN);
+	        driver.findElement(By.linkText("Interview Q")).sendKeys(selectLinkNewTab);
+	        
+	        WebDriver tab;
+			
 		  
 	
 	}

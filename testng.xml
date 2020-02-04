@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="EdurePhoto">
-  <test thread-count="5" name="MavenTest">
-  <classes>
-  <class name="com.edurekademo.basics.EdurekaPhotoUpload"></class>
-  </classes>
-  </test> <!-- MavenTest -->
-</suite> <!-- EdurePhoto -->
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.edurekademo.basics.BaseClass"/>
+      <class name="com.edurekademo.basics.Enroll_CourseInEdureka"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
